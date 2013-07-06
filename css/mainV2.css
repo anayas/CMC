@@ -1,0 +1,252 @@
+/* CSS RESET */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* HTML5 tags */
+header, section,footer, aside, nav, article{
+	display: block;
+}
+
+
+
+/**** Global ****/
+
+
+/***** Layout *****/
+.body {	/* instead of using div wrapper - body class of my website to be for a certain width (960px) */ 
+	clear: both;
+	margin: 0 auto;
+	width: 960px;
+	border: solid 1px red;
+}
+
+/* Header */
+#banner{
+	margin: 0 auto;
+	padding: 2.5em 0 0 0;
+}
+
+
+/* Body */
+
+body{
+	background: #ccc;
+	color: #204E74;
+	font-size: 87.5%;  /* Based on font size 14px */
+	font-family: arial, Helvetica;
+	line-height: 1.429;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+/* Headings */
+
+h1{
+	font-size: 1.571em; /* 22px */
+}
+h2{
+	font-size: 1.429em; /* 20px */
+}
+h3{
+	font-size: 1em; /* 14px */
+}
+
+h1, h2, h3{
+	font-weight: 700;
+	line-height: 1.1;
+	margin-bottom: .8em;
+}
+
+
+/* Anchors */
+
+a{
+	outline: 0;
+}
+a img{
+	border: 0px;
+	text-decoration: none;
+}
+a:link, a:visited{
+	color: #537C9E;
+	padding: 0 1px;
+}
+a:hover, a:active{
+	background-color:  #9DADBA; /*greyish */
+	/* height: 50px; */
+	/* padding: 15px; */
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #333;  /* shadow on our text that’s 1px to the right, 1px down and with a 1px blur */
+}
+
+
+/* Paragraphs */
+
+p{
+	margin-bottom: 1.143em;
+	
+}
+p:last-child{
+	margin-bottom: 0; /* to avoid large vertical gaps. */
+}
+::-moz-section{ 		/* CSS3 selector that lets us style how the text selection looks. */
+	background: #F6CF74; /* ::-moz-selection needs to go here since Mozilla haven’t implemented the	*/				
+	color: #fff; 		
+}
+::selection{	/* ::selection selector. */
+	background: #F6F74;
+	color: fff;
+}
+
+
+/* Lists */
+
+ul{
+	list-style: outside disc;
+	margin:  1em 0 1.5em 1.5em;
+}
+
+ol{
+	list-style:  outside decimal;
+	margin:  1em 0 1.5em 1.5em
+}
+dl{
+	margin: 0 0 1.5em 0;
+}
+dt{
+	font-weight: bold;
+}
+dd{
+	margin-left: 1.5em;
+}
+
+
+/* Quotes */
+
+blockquote{
+	font-style: italic;
+}
+
+/* Tables */
+table {
+	margin: .5em auto 1.5em auto; 
+	width: 98%;
+}
+ 
+/* Thead */
+thead th {
+	padding: .5em .4em; 
+	text-align: left;
+}
+thead td {}
+ 
+/* Tbody */
+tbody td {
+	padding: .5em .4em;
+}
+tbody th {
+	
+}
+tbody .alt td {
+	
+}
+tbody .alt th {
+	
+}
+
+/* Tfoot */
+tfoot th {
+	
+}
+tfoot td {
+	
+}
+
+
+/* END GLOBAL CSS SETTINGS */
+
+
+
+
+
+/* HOME PAGE */
+
+/* GlobalNav2 */
+
+#mainNav2{
+	background: #60C9C2;
+	font-size: 14px;
+	font-family: arial;
+	font-weight: bold;
+	height: 40px;
+	width: 350px;
+	float: right;
+	clear: both;
+	/* border: solid 1px red; */
+	margin: 0 0 0 560px;
+	
+	
+}
+#mainNav2 li{
+	float: left;
+	list-style: none;
+	
+}
+#mainNav2 li:first-child{ /* internal medicine */
+	clear: both;
+	float: left;
+	margin: 0 5px 0 0;
+	width: 200px;
+}
+#mainNav2 li a{
+	text-decoration: none;
+	padding: 16px 10px 10px 10px;
+}
