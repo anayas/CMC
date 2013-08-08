@@ -1,0 +1,751 @@
+/* CSS RESET */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* HTML5 tags */
+header, section,footer, aside, nav, article{
+	display: block;
+}
+
+
+
+/**** Global ****/
+
+
+/***** Layout *****/
+.body {	/* instead of using div wrapper - body class of my website to be for a certain width (960px) */ 
+	clear: both;
+	margin: 0 auto;
+	width: 960px;
+	/* width: 100%; */
+}
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../fonts/Comfortaa_Bold.ttf') format('truetype'),
+         url('../fonts/Comfortaa_Regular.ttf') format('truetype'),
+         url('../fonts/Comfortaa_Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: Comfortaa);
+}
+
+.bg{
+	/* background: #border: solid 1px red; */
+	background: #CCC;
+}
+
+/* Header */
+/*
+#banner{
+	margin: 0 auto;
+	padding: 2.5em 0 0 0;
+	clear: left;
+	background: #F00;
+	width: 500px;
+}
+*/
+header{
+/* background: red; */
+	background: #537C9E;
+	clear: both;
+	float: right; 
+	/* width: 960px; */
+	width: 100%;
+}
+
+/* Body */
+
+body{
+	/* background: #ccc; */
+	background: #537c9e;
+	color: #204E74;
+	font-size: 87.5%;  /* Based on font size 14px */
+	font-family: arial, Helvetica;
+	line-height: 1.429;
+	margin: 0 auto;
+	padding: 0;
+	text-align: left;
+	
+}
+
+/* Headings */
+
+h1{
+	font-size: 1.571em; /* 22px */
+	font-family: Comfortaa;
+	background: #60C9C2;
+	/* width: 550px; */
+	width: 70%;
+	height: 30px;
+	padding: 15px 0 0 25px;
+	letter-spacing: 2px;
+	
+}
+h2{
+	font-size: 1.429em; /* 20px */
+	color: #60c9c2;
+	letter-spacing: 1px;
+	margin: 0 0 0 25px;
+}
+h3{
+	font-size: 1em; /* 14px */
+}
+
+h1, h2, h3{
+	font-weight: 700;
+	line-height: 1.1;
+	margin-bottom: .8em;
+}
+
+
+/* Anchors */
+
+a{
+	outline: 0;
+}
+a img{
+	border: 0px;
+	text-decoration: none;
+}
+a:link, a:visited{
+	color: #537C9E;
+	padding: 0 1px;
+}
+a:hover, a:active{
+	background-color:  #9DADBA; /*greyish */
+	/* height: 50px; */
+	/* padding: 15px; */
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #333;  /* shadow on our text that’s 1px to the right, 1px down and with a 1px blur */
+}
+
+
+/* Paragraphs */
+
+p{
+	margin: 0 0 1.143em 25px;
+	
+	
+}
+p:last-child{
+	margin-bottom: 0; /* to avoid large vertical gaps. */
+}
+::-moz-section{ 		/* CSS3 selector that lets us style how the text selection looks. */
+	background: #F6CF74; /* ::-moz-selection needs to go here since Mozilla haven’t implemented the	*/				
+	color: #fff; 		
+}
+::selection{	/* ::selection selector. */
+	background: #F6F74;
+	color: fff;
+}
+
+
+/* Lists */
+
+ul{
+	list-style: outside disc;
+	margin:  1em 0 1.5em 1.5em;
+}
+
+ol{
+	list-style:  outside decimal;
+	margin:  1em 0 1.5em 1.5em
+}
+dl{
+	margin: 0 0 1.5em 0;
+}
+dt{
+	font-weight: bold;
+}
+dd{
+	margin-left: 1.5em;
+}
+
+
+/* Quotes */
+
+blockquote{
+	font-style: italic;
+}
+
+/* Tables */
+table {
+	margin: .5em auto 1.5em auto; 
+	width: 98%;
+}
+ 
+/* Thead */
+thead th {
+	padding: .5em .4em; 
+	text-align: left;
+}
+thead td {}
+ 
+/* Tbody */
+tbody td {
+	padding: .5em .4em;
+}
+tbody th {
+	
+}
+tbody .alt td {
+	
+}
+tbody .alt th {
+	
+}
+
+/* Tfoot */
+tfoot th {
+	
+}
+tfoot td {
+	
+}
+
+
+/* END GLOBAL CSS SETTINGS */
+
+
+
+
+
+/* HOME PAGE */
+
+/* GlobalNav2 */
+html{
+	/* border: solid cyan 1px; */
+	background: #537C9E;
+	
+}
+#mainNav2{
+	background: #60C9C2;
+	font-size: 14px;
+	font-family: arial;
+	font-weight: bold;
+	height: 40px;
+	/* width: 294px; */
+	width: 40%;
+	float: right;
+	clear: left;
+	margin: -40px 0px 0px 0;
+	/* border: solid 1px red; */
+	
+	
+}
+#mainNav2 li{
+	/* clear: both; */
+	float: left;
+	list-style: none;
+	
+}
+#mainNav2 li:first-child{ /* internal medicine */
+	clear: both;
+	float: left;
+	margin: 0 -20px 0 -30px;
+	width: 55%;
+	padding: 0 0 0 8px;
+}
+#mainNav2 li a{
+	text-decoration: none;
+	padding: 16px 16px 8px 15px;
+}
+
+/* GlobalNav */ 
+#wrapper{
+	background: #CCC;
+	/* width: 100%; */
+	width: 960px;
+	margin: 0 auto;
+	/* margin: 0 0 0 700px; */
+	/* margin 0 auto; */
+	/*margin: 0 0 0 50px; */
+
+}
+/**************************** HEADER SECTION ****************/
+#logo{
+	background: #537C9E;
+	clear: left;
+	float: left;
+	width: 272.25px;
+
+	margin: 40px 0 -100px 20px;
+	padding: 0;
+	
+}
+#headerImg{
+	clear: left;
+	/* float: right; */
+	margin: 0px 0px -28px 290px;
+	float: left;
+}
+#mainNav{
+	background: #CCC;
+	font-size: 14px;
+	font-family: arial;
+	font-weight: bold;
+	height: 40px;
+	width: 685px;
+	float: right;
+	clear: both;
+	margin: 0 20px 0 0;
+	position: relative;
+	/* border: solid 1px red; */
+	
+}
+
+#mainNav li{
+	float: left;
+	list-style: none;
+}
+#mainNav li a{
+	text-decoration: none;
+	padding: 16px 16px 8px 15px;
+}
+/****************************** CONTENT SECTION *****************/
+article{
+	background: #CCC;
+	clear: left;
+	float: left;
+	
+}
+
+article p{
+	/* width: 245px; */
+	clear: left;
+	/* overflow: hidden; */
+	/* border: solid 1px red; */
+	
+}
+article h1{
+	/* width: 605px; */
+	width: 62%;
+	margin: 21px 0 0 50px;
+}
+#generalContent{
+	/* width: 540px; */
+	width: 70%;
+	background: #CCC;
+}
+#generalContent p{
+	/* width: 245px; */
+	width: 70%;
+}
+#newsletter{
+	width: 70%;
+	margin: 40px 0 50px 20px;
+	clear: left;
+	float: left;
+}
+#newsletter h2{
+	color: #537C9E;
+	padding: 3px 0 3px 22px;
+}
+
+#newsletter p{
+	clear: left;
+	float: left;
+	width: 55%;
+	margin: 0 0 0 50px;
+}
+
+
+#missionStatement{
+	/* border: solid 1px blue; */
+	float: left;
+	clear: left;
+	/* width: 319px; */
+	width: 70%;
+	/* margin: -204px 50px 50px 630px; */
+	margin: -234px 0 15px 350px;
+	display: inline;
+	/* border: solid 1px blue; */
+	
+	
+}
+#missionStatement h2{
+	/* background: #537C9E; */
+	padding: 3px 0 3px 5px;
+	color: #537C9E;
+	
+}
+#missionStatement p{
+	clear: left;
+	float: left;
+	/* width: 245px; */
+	width: 55%;
+	display: block;
+	margin: 0 0 0 30px;
+
+	
+}
+#whatsNew{
+	clear: left;
+	float: left;
+	/* width: 319px; */
+	width: 55%;
+	margin: 40px 0 0 50px;
+	
+	/* overflow: hidden; */
+	/* border: solid 1px blue; */
+	/* background: #9dadba; */
+}
+#whatsNew h2{
+	/* background: #537C9E; */
+	padding: 3px 0 3px 5px;
+	color: #537C9E;
+}
+#whatsNew p{
+	margin: 0 0 0 30px;
+}
+#patientPortal{
+	clear: left;
+	float: left;
+	/* width: 319px; */
+	width: 65%;
+	margin:  -325px 0 0 350px;
+	
+	/* border: solid 1px blue; */
+	/* margin: -364px  0 25px 330px; */
+	/* background: #9dadba; */
+	
+
+}
+#patientPortal h2{
+	/* background: #537C9E; */
+	padding: 3px 0 3px 5px;
+	color: #537C9E;
+}
+#patientPortal p span{
+	/* border: solid 1px blue; */
+	margin: -135px 0 0 150px;
+	font-size: 10px;
+	float: left;
+	clear: left;
+	
+}
+#portal{
+	margin: 0 0 70px 50px;
+	/* border: solid 1px blue; */
+	clear: left;
+	float: left;
+
+}
+
+
+
+/**************************************** CONTACT SECTION *********/
+#contact{
+	
+	width: 30%;
+	clear: left;
+	float: right;
+	display: inline;
+	margin: -704px -40px 0 0;
+	
+}
+
+#contact h1{
+	width: 83%;
+	margin: 0px 50px 0 0;
+}
+#OC{
+	background: #60C9C2;
+	padding: 5px 0 5px 18px;
+	margin: 10px 0 10px 25px;
+	/* width: 200px; */
+	width: 75%;
+}
+#Deland{
+	background: #60C9C2;
+	padding: 5px 0 5px 18px;
+	margin: 10px 0 10px 25px;
+	/* width: 200px; */
+	width: 75%;
+}
+#contact p{
+	/* border: solid 1px green; */
+	margin: 0 60px 0 45px; 
+	
+	
+}
+#contactBg{
+	background: #9DADBA;
+	/* width: 265px; */
+	width: 91%;
+	clear: left;
+	float: left;
+	margin: 42px 0 0 0;
+	padding: 0 0 20px 0;
+}
+#contact p span{
+	/* border: solid 1px green; */
+	font-weight: bold;
+	
+}
+.getMap{
+	font-size: 11px;
+	
+}
+.getMap a{
+	text-decoration: none;
+}
+
+
+
+/************************************************** SOCIAL ICONS SECTION************/
+#facebookIcon{
+	/* border: solid 1px green; */
+	clear: left;
+	float: left;
+	margin: 0 0 0 -10px;
+	
+}
+
+
+/*********************************************** Footer Section **********/
+
+footer{
+	clear: left;
+	float: left;
+}
+#nav1{
+	font-size: 12px;
+	/* margin: 0 0 0 -500px; */
+	clear: left;
+	float: left;
+	margin: 0 0 0 -450px;
+}
+#nav1 ul{
+	/* background: red; */
+	clear: left;
+	float: left;
+	width: 100px;
+	
+}
+#nav1 li{
+	margin: 100px 0 0 0;
+	list-style: none;
+	clear: left;
+
+}
+#nav1 li a{
+	color: #5fc9c2;
+	margin: 0 0 5px 700px;
+	clear: left;
+	float: left;
+	/* border: solid 1px green; */
+	width: 100px;
+	list-style: none;
+	text-decoration: none;
+}
+#nav2{
+	font-size: 12px;
+	margin: 0 50px 0 -450px;
+	
+}
+#nav2 ul{
+	/* background: green; */
+	clear: left;
+	float: left;
+	width: 100px;
+}
+#nav2 li{
+	margin: -160px 0 0 0;
+	list-style: none;
+	background: red;
+}
+#nav2 li a{
+	color: #5fc9c2;
+	margin: 0 0 5px 920px;
+	clear: left;
+	float: left;
+	width: 120px;
+	/* border: solid 1px green; */
+	text-decoration: none;
+}
+#nav2 li a:hover, #nav2 li a:active{
+	background-color:  #537C9E; /*blue */
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #333;  /* shadow on our text that’s 1px to the right, 1px down and with a 1px blur */
+} 
+footer p{
+	clear: left;
+	float: left;
+	margin: 50px 0 50px 450px;
+	
+	padding: 0 0 25px 0;
+	width: 960px;
+	color: #CCC;
+	font-size: 12px;
+	font-family: arial;
+}
+#social{
+	clear: left;
+	float: right;
+	width: 54px;
+	margin: -185px -120px 0 0;
+}
+#social a:hover, a:active{
+	background-color:  #537C9E; /*blue */
+	
+	
+	
+}
+
+
+
+
+/*************************************************** ABOUT US PAGE **********************/
+
+#aboutParagraph{
+	margin: 39px 0 20px 70px;
+	float: left;
+	clear: left;
+	width: 605px;
+	font-family: arial;
+	font-size: 14px;
+}
+#aboutImage{
+	border: solid 10px #fff;
+	margin: 0 0 0 50px;
+	clear: left;
+	float: left;
+}
+
+#aboutUsList{
+	clear: left;
+	float: left;
+	margin: 50px 0 75px 50px;
+}
+#aboutUsList li{
+	list-style: none;
+	margin: 0 0 5px 0;
+}
+#aboutUsList li a{
+	text-decoration: none;
+	padding: 3px;
+}
+#contactUsOnAboutPage{
+	margin: -267px 0 0 0;
+}
+
+/*************************************************** PHYSICIANS PAGE **********************/
+
+/*********************************** MARCELO ANAYAS */
+#internalMedicine{
+	clear: left;
+	float: left;
+	margin: 20px 0 0 75px;
+	color: #537C9E;
+}
+#marceloImg{
+	clear: left;
+	float: left;
+	margin: 20px 0 0 75px;
+	
+}
+#aboutMarcelo{
+	width: 38%;
+	display: inline-block;
+	margin: 20px 0 20px 40px;
+	
+	
+}
+#contactUsOnPhysiciansPage{
+	margin: -1100px 0 0 0;
+	overflow: hidden;
+	
+}
+/***********************************CONCEPCION ANAYAS */
+#peds{
+	clear: left;
+	float: left;
+	margin: 50px 0 0 75px;
+	color: #537C9E;
+}
+#aboutConcepcion{
+	width: 38%;
+	display: inline-block;
+	margin: 50px 0 20px 110px;
+}
+#concepcionImg{
+	clear: left;
+	float: left;
+	margin: 20px 0 0 75px;
+}
+/*********************************** PAM PERRY*/
+#aboutPam{
+	width: 38%;
+	display: inline-block;
+	margin: 20px 0 20px 20px;
+	clear: left;
+}
+#pamImg{
+	clear: left;
+	float: left;
+	margin: 140px 0 0 70px;
+}
+/*********************************** Sherene Roach*/
+#aboutSherene{
+	width: 38%;
+	display: inline-block;
+	margin: 20px 0 90px 20px;
+	clear: left;
+}
+#shereneImg{
+	clear: left;
+	float: left;
+	margin: 281px 0 0 70px;
+}
